@@ -1,0 +1,116 @@
+@media (min-width:1024px) and (max-width:1365px) {
+
+/*.imgauto{width:60%;height:auto}*/
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+.cbp-spmenu-close{display:block;}
+.cbp-spmenu-ico{display:block;}
+
+#header{position:static;}
+
+.menudiv{display:none;}
+.logodiv{width:100%;float:none;text-align:center}
+.content80{width:96%;margin:auto;}
+.testimonial{width:80%;margin:auto;}
+
+}
+
+@media (min-width:640px) and (max-width:767px) {
+.cbp-spmenu-close{display:block;}
+.cbp-spmenu-ico{display:block;}
+
+#header{position:static;}
+
+.menudiv{display:none;}
+.logodiv{width:100%;float:none;text-align:center}
+.content80{width:96%;margin:auto;}
+.testimonial{width:80%;margin:auto;}
+
+.imgauto{width:90%;height:auto}
+#footer {height:auto;}
+}
+
+@media (min-width:320px) and (max-width:639px) {
+.cbp-spmenu-close{display:block;}
+.cbp-spmenu-ico{display:block;}
+
+#header{position:static;}
+#headerin{height:80px;}
+
+.menudiv{display:none;}
+.logodiv{width:100%;float:none;text-align:center}
+.content80{width:96%;margin:auto;}
+.testimonial{width:96%;margin:auto;}
+
+.imgauto{width:90%;height:auto}
+.imgauto1{width:80%;height:auto}
+.logo{width:200px;height:auto}
+#footer {height:auto;}
+
+.hometext1{font-size: 18px;}
+.hometext2{font-size: 32px;}
+.hometext3{font-size: 32px;}
+.testimonialtext1{font-size: 32px;}
+
+.formfld1{width:96%}
+.formfld2{width:96%}
+}
+
+
+@media (min-width:320px) and (max-width:360px) {
+.cbp-spmenu-close{display:block;}
+.cbp-spmenu-ico{display:block;}
+
+#header{position:static;}
+#headerin{height:80px;}
+
+.menudiv{display:none;}
+.logodiv{width:100%;float:none;text-align:center}
+.content80{width:96%;margin:auto;}
+.testimonial{width:96%;margin:auto;}
+
+.imgauto{width:90%;height:auto}
+.imgauto1{width:80%;height:auto}
+.logo{width:200px;height:auto}
+#footer {height:auto;}
+
+.hometext1{font-size: 18px;}
+.hometext2{font-size: 32px;}
+.hometext3{font-size: 32px;}
+.testimonialtext1{font-size: 32px;}
+
+.formfld1{width:96%}
+.formfld2{width:96%}
+
+}
+
+@media (min-width:0px) and (max-width:320px) {
+.cbp-spmenu-close{display:block;}
+.cbp-spmenu-ico{display:block;}
+
+#header{position:static;}
+#headerin{height:80px;}
+
+.menudiv{display:none;}
+.logodiv{width:100%;float:none;text-align:center}
+.content80{width:96%;margin:auto;}
+.testimonial{width:96%;margin:auto;}
+
+.imgauto{width:90%;height:auto}
+.imgauto1{width:80%;height:auto}
+.logo{width:200px;height:auto}
+#footer {height:auto;}
+
+.hometext1{font-size: 18px;}
+.hometext2{font-size: 32px;}
+.hometext3{font-size: 32px;}
+.testimonialtext1{font-size: 32px;}
+
+.formfld1{width:96%}
+.formfld2{width:96%}
+
+}
+
+  

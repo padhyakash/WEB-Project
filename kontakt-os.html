@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kontakt os | EnableIT</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <script language="javascript" type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/classie.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script language="javascript" type="text/javascript" src="js/contact_me.js"></script>
+	<script type="text/javascript">
+		function validate_form(){
+			var name = document.getElementById('name').value;
+			if(name===''){
+				alert('Please provide your name!');
+				document.sentMessage.name.focus() ;
+				return false;
+			}
+			
+			var email = document.getElementById('email').value;
+			if(email===''){
+				alert( "Please provide your Email!" );
+				document.sentMessage.email.focus() ;
+				return false;
+			}
+			
+			if(!validateEmail(email)){
+				return false;
+			}
+			
+			var cust_phone = document.getElementById('phone').value;
+			if(cust_phone===''){
+				alert('Please provide phone number!');
+				document.sentMessage.phone.focus() ;
+				return false;
+			}
+			if(isNaN(cust_phone)){
+				alert("Enter numeric value for phone number!");
+				document.sentMessage.phone.focus() ;
+				return false;
+			}
+			
+			var name = document.getElementById('message').value;
+			if(name===''){
+				alert('Please enter message!');
+				document.sentMessage.message.focus() ;
+				return false;
+			}
+			
+			document.getElementById('submit_form').value=1;
+			document.product_form.submit();
+			return true;		
+		}
+	
+		function validateEmail(emailID){
+			 atpos = emailID.indexOf("@");
+			 dotpos = emailID.lastIndexOf(".");
+			 
+			 if (atpos < 1 || ( dotpos - atpos < 2 )){
+				alert("Please enter correct email ID");
+				document.sentMessage.email.focus() ;
+				return false;
+			 }
+			 return( true );
+			}
+	</script>
+</head>
+<body>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+    <div class="cbp-spmenu-close"><a href="#"  onClick="closespmenu()"><img src="images/icon_menu_close.png"></a></div>
+    <div id="mobilemenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="om-enableit.html">Om EnableIt</a></li>
+            <li><a href="referencer.html">Referencer</a></li>
+            <li><a href="kontakt-os.html">Kontakt os</a></li>
+        </ul>
+        <div class="flagpad"><a href="en/index.html"><img src="images/flag-eng.png"></a></div>
+    </div>
+</nav>
+<div class="cbp-spmenu-ico"><img src="images/icon_menu.png" id="showLeft" style="cursor:pointer"></div>
+
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        body = document.body;
+
+    showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+
+    };
+    function closespmenu()
+    {
+        document.getElementById('cbp-spmenu-s1').className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left'
+    }
+</script>
+
+<div id="wrapper">
+    <div id="headerin">
+        <div class="content80">
+            <div class="logodiv"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+            <div class="menudiv">
+                <ul class="menu">
+                    <li><a href="om-enableit.html">Om EnableIt</a></li>
+                    <li><a href="referencer.html">Referencer</a></li>
+                    <li><a href="kontakt-os.html">Kontakt os</a></li>
+                    <li><a href="en/index.html"><img src="images/flag-eng.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- end of headerin -->
+
+    <div id="content">
+        <div class="content80">
+            <div class="contentpad">
+                <h1>Kontakt os</h1>
+
+                <p><b>EnableIT</b><br>
+                    CVR 26448603<br>
+                    Hædersdalvej 7<br>
+                    2650 Hvidovre<br>
+                    Tlf. 3648 1200
+
+                <p>Ring til os, eller skriv til os vha. nedenstående formular, så kontakter vi dig hurtigst muligt.</p>
+
+                <form name="sentMessage" id="contactForm" novalidate="novalidate"   class="webform-client-form">
+                    <div class="greybox">
+                        <div>Dit navn: <span class="red">*</span></div>
+                        <div>
+                            <input class="formfld1" id="name" type="text" placeholder="Name"
+                                   required>
+                        </div>
+
+                        <div class="pT20">Din emailadresse: <span class="red">*</span></div>
+                        <div>
+                            <input class="formfld1" id="email" type="email"
+                                   placeholder="Email Address" required>
+                        </div>
+
+                        <div class="pT20">Dit telefonnummer: <span class="red">*</span></div>
+                        <div>
+                            <input  class="formfld1" id="phone" type="tel"
+                                    placeholder="Phone Number" required>
+                        </div>
+
+                        <div class="pT20">Skriv din besked her: <span class="red">*</span></div>
+                        <div>
+                                <textarea class="formfld2" id="message" rows="5"
+                                          placeholder="Message" required></textarea>
+                        </div>
+
+                        <div class="pT20">
+                            <button type="submit" id="sendMessageButton" class="formbtn" onClick="return validate_form();">INDSEND</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div><!-- end of content -->
+
+    <div id="footer">
+        <div class="content80">
+            <div class="footer-content">
+                EnableIT - CVR 26448603 - Tlf. 3648 1200 - Hædersdalvej 7 - 2650 Hvidovre
+            </div>
+        </div>
+    </div><!-- end of footer -->
+
+</div><!-- end of wrapper -->
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+
+html,body {
+margin:0;
+padding:0;
+height:100%;
+color:#000000;
+}
+
+body{font-family:Open Sans;font-size:14px}
+
+#wrapper {
+min-height:100%;
+position:relative;
+}
+
+#header{
+	position:fixed;
+	height: 100px;
+	display:block;
+	width: 100%;
+	background: #fff;
+	z-index:9;		
+}
+
+#header{
+	top:0px;
+}
+
+#headerin{
+	position:static;
+	height: 100px;
+	width: 100%;
+	background: #fff;	
+}
+
+#content {
+font-size:14px;
+padding-bottom:70px; /* Height of the footer */
+}
+
+#footer {
+position:absolute;
+bottom:0;
+width:100%;
+height:70px; /* Height of the footer */
+background:#000000;
+}
+
+.logodiv{width:20%;float:left;padding-top:25px;}
+.menudiv{width:75%;float:right;text-align:right;padding-top:60px;}
+
+.content80{width:80%;margin:auto}
+.content70{width:70%;margin:auto}
+.content60{width:60%;margin:auto}
+.content50{width:50%;margin:auto}
+.content40{width:40%;margin:auto}
+
+.content100H{height:100%;}
+
+.contentpad{padding:20px 30px 50px 30px;}
+
+.greybox{background:#ffffff;border:1px solid #ddd;padding:30px;box-shadow:3px 3px 20px #9d9d9d; line-height:200%}
+
+.aC{text-align:center}
+.aL{text-align:left}
+.aR{text-align:right}
+
+.mT20{margin-top:20px}
+
+.pT20{padding-top:20px}
+.pT100{padding-top:200px}
+.pT200{padding-top:100px}
+
+.pB20{padding-bottom:20px}
+
+.red{color:red}
+
+ul.menu{margin:0;padding:0;list-style:none}
+ul.menu li{margin:0;padding:0;display:inline;font-size:18px;margin-right:40px}
+ul.menu li a{color:#000000;text-decoration:none}
+ul.menu li a:hover{color:#ed8a00}
+
+.hometext1{color:#fff;text-align:center;font-size:24px}
+.hometext2{text-align:center;font-size:36px}
+.hometext3{text-align:center;font-size:48px}
+
+.homebg3{height:100%;background: url(../images/homebg3.jpg) no-repeat bottom left;   -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+
+.testimonial{width:1000px;margin:auto}
+.testimonialpad{padding-top:120px;padding-bottom:120px}
+.testimonialtext1{font-size:42px;font-weight:bold}
+.testimonialtext2{font-size:18px;font-style:italic;color:#555;padding:40px 85px 40px 85px}
+
+.formfld1{width:300px;padding:8px;font-size:18px;border:1px solid #ccc;border-radius:4px}
+.formfld2{width:300px;height:100px;padding:5px;font-size:18px;border:1px solid #ccc;border-radius:4px}
+.formbtn{border:0;padding:8px 15px 8px 15px;background:#000;color:#fff;font-size:18px;cursor:pointer}
+.formbtn:hover{background:#ed8a00}
+
+.linuximg{position:absolute;z-index:10;margin-top:-100px}
+.linuximgin{position:absolute;z-index:10;margin-top:50px}
+
+.footer-bottom{position:absolute;width:100%;bottom:0;background:#000000;}
+.footer-content{padding:20px;text-align:center;color:#ffffff;font-size:18px}
+
+/* classes for MOBILE MENU */
+
+.cbp-spmenu {background: #000000;position: fixed;}
+.cbp-spmenu ul {margin:0;padding:0;list-style:none;}
+.cbp-spmenu ul li{margin:0px 10px 0px 10px;padding:20px 0px 20px 10px;border-bottom: 1px dotted #333333;}
+.cbp-spmenu a {color:#7a7a7a;font-size:14px;text-decoration:none;}
+.cbp-spmenu a:hover {text-decoration:none;color:#aaaaaa;transition: color 0.3s ease-out 0s;}
+.cbp-spmenu a:active {color:#7a7a7a;}
+
+.cbp-spmenu-close{text-align:right;padding:10px}
+.cbp-spmenu-ico{display:none;position:absolute;z-index:1000;top:20px;left:15px;}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {width: 240px;height: 100%;top: 0;z-index: 2000;}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {left: -240px;}
+.cbp-spmenu-left.cbp-spmenu-open {left: 0px;}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.flagpad{padding-top:15px;padding-left:20px}
