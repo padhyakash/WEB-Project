@@ -53,9 +53,9 @@
 				return false;
 			}
 			
-			document.getElementById('submit_form').value=1;
-			document.product_form.submit();
-			return true;		
+		/*	document.getElementById('submit_form').value=1;
+			document.contactForm.submit();
+			return true;	*/	
 		}
 	
 		function validateEmail(emailID){
@@ -129,7 +129,7 @@
                     
                     <p>Call us or write us using the form below, and we'll get back to you ASAP.</p>
                     
-                   <form name="sentMessage"  id="contactForm" novalidate="novalidate"   class="webform-client-form">
+                   <form name="sentMessage"  id="contactForm" novalidate="novalidate"  action="mail/contact_me.php" class="webform-client-form">
                     	<input type='hidden' id='submit_form' name='submit_form' value=''/>
                     	<div class="greybox">
                         	<div>Your Name: <span class="red">*</span></div>
